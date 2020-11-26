@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi kurs mata uang</title>
+</head>
+
+<body>
+    <h1 align="center">Aplikasi Konversi Mata Uang</h1><br>
+    <table border="1" align="center" style="background-color: cadetblue;">
+        <tr>
+            <td>
+            <td align="center">
+                <p>Mata Uang Asal</p> <br><br>
+                <div>
+                    <form id="tg1" name="tg1" onsubmit="return false">
+
+                        <select id="fyi">
+                            <option value="angka1">Indonesia Rupiah</option>
+                            <option value="angka2">Dollar Singapore</option>
+                            <option value="angka3">Euro</option>
+                            <option value="angka4">Yen Jepang</option>
+                            <option value="angka5">Dollar US</option>
+                        </select>
+
+                    </form>
+
+                    <br><input id="data1" type="text" placeholder="" name=""><br>
+
+                    <input type="button" onclick="hitung()" name="" value="Hitung">
+            </td>
+            <td align="center">
+                <P>Mata Uang Tujuan</P> <br><br>
+                <div>
+                    <form id="tg2" name="tg2" onsubmit="return false">
+                        <select id="fy1">
+                            <option value="angka1">Indonesia-Rupiah</option>
+                            <option value="angka2">Dollar Singapore</option>
+                            <option value="angka3">Euro</option>
+                            <option value="angka4">Yen Jepang</option>
+                            <option value="angka5">Dollar US</option>
+                        </select>
+                    </form>
+                    <br>
+                    <p id="cnct"></p>
+            </td>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        function hitung() {
+
+            var mata_uang = document.getElementById('tg1').fyi.value;
+            var tukar_uang = document.getElementById('tg2').fy1.value;
+            var masukan = parseFloat(data1.value);
+
+            if (mata_uang == "angka1" && tukar_uang == "angka2") {
+
+                var hasil = masukan * 292.54;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka1" && tukar_uang == "angka3") {
+
+                hasil = masukan * 0.000061;
+
+                document.getElementById("cnct").innerHTML = hasil;
+            } else if (mata_uang == "angka1" && tukar_uang == "angka4") {
+
+                hasil = masukan * 46.519;
+
+                document.getElementById("cnct").innerHTML = hasil;
+            } else if (mata_uang == "angka1" && tukar_uang == "angka5") {
+
+                hasil = masukan * 0.000071;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka2" && tukar_uang == "angka3") {
+
+                hasil = masukan * 0.017;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka2" && tukar_uang == "angka4") {
+
+                hasil = masukan * 0.0063;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka2" && tukar_uang == "angka5") {
+
+                hasil = masukan * 48.33;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka3" && tukar_uang == "angka4") {
+
+                hasil = masukan * 2.76
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka3" && tukar_uang == "angka5") {
+
+                hasil = masukan * 1.18;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka4" && tukar_uang == "angka5") {
+
+                hasil = masukan * 0.00084;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka5" && tukar_uang == "angka1") {
+
+                hasil = masukan * 9.915;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka5" && tukar_uang == "angka4") {
+
+                hasil = masukan * 0.31;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka5" && tukar_uang == "angka3") {
+
+                hasil = masukan * 0.85;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka5" && tukar_uang == "angka2") {
+
+                hasil = masukan * 4832;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka4" && tukar_uang == "angka3") {
+
+                hasil = masukan * 0.36;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka4" && tukar_uang == "angka2") {
+
+                hasil = masukan * 158;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka4" && tukar_uang == "angka1") {
+
+                hasil = masukan * 120;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka3" && tukar_uang == "angka2") {
+
+                hasil = masukan * 2395;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka3" && tukar_uang == "angka1") {
+
+                hasil = masukan * 16840;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            } else if (mata_uang == "angka2" && tukar_uang == "angka1") {
+
+                hasil = masukan * 13472;
+
+                document.getElementById("cnct").innerHTML = hasil;
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
